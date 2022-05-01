@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user-icon-img {
+    width: 50px;
+    height: 50px;
+}
+
+.input-date-start:focus, .input-user:focus, .input-password:focus, select:focus, .form-OD:focus,
+.form-destiny:focus, .tank-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0 ;
+}
+.active-pag {
+    background-color:#fff !important;
+    color: #000 !important;
+}
+
+.section-data-service {
+    margin-top: 40px;
+}
+
+.add-section, .profile-section, .report-section {
+    width: 75%;
+    flex: 1;
+}
+
+.new-exit-select, .form-token, .exit-time {
+    width: 50%;
+}
+
+.data-table {
+    font-size: 14px;
+}
+.button-act {
+    font-size: 14px;
+    padding: 2px !important;
+}
+
+.section-area-data-item {
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 991px) {
+    .form-start-service {
+        width: 100vw !important;
+    }
+
+    .data-table {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .table>:not(caption)>*>* , .table>:not(:first-child){
+        border: none;
+    }
+
+    .section-area-data-item {
+        flex-direction: column;
+    }
+
+    .index-section {
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px) {
+    .section-area-select {
+        flex-direction: column;
+    }
+
+    .new-exit-select, .form-token, .exit-time, .profile-section, .report-section {
+        width: 100%;
+    }
+
+    .button-back-profile {
+        margin-bottom: 10px;
+    }
+
+    .input-bug-description {
+        width: 70vw;
+    }
+    
+}
+
+/*Add CSS*/
+
+.section-area-select select, input, .section-area-select button, .section-area-select a, .exit-time {
+    margin: 0 5px 5px 5px;
+}
+
+.form-start-service {
+    width: 50vw;
+}
+
+.form-OD::-webkit-input-placeholder, .form-destiny::-webkit-input-placeholder, .form-token::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/*Bug Form CSS*/
+
+.section-report-area {
+    margin-top: 40px ;
+}
+
+.input-bug-description::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.input-bug-description {
+    background-color: transparent;
+    width: 400px;
+    height: 50px;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    outline: 0;
+}
+
+/*Index CSS*/
+
+.user-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.section-data-area {
+    height: 100%;
+    width: 100%;
+}
+
+/*Login CSS*/
+
+.input-user, .input-password {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+}
+
+/*Sidebar CSS*/
+
+body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+  }
+  
+  html {
+    height: -webkit-fill-available;
+  }
+  
+  .section-aside-menu {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100vh;
+    height: -webkit-fill-available;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .b-example-divider {
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  }
+  
+  .bi {
+    vertical-align: -.125em;
+    pointer-events: none;
+    fill: currentColor;
+  }
+  
+  .dropdown-toggle { outline: 0; }
+  
+  .nav-flush .nav-link {
+    border-radius: 0;
+  }
+  
+  .btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, .65);
+    background-color: transparent;
+    border: 0;
+  }
+  .btn-toggle:hover,
+  .btn-toggle:focus {
+    color: rgba(0, 0, 0, .85);
+    background-color: #d2f4ea;
+  }
+  
+  .btn-toggle::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+  }
+  
+  .btn-toggle[aria-expanded="true"] {
+    color: rgba(0, 0, 0, .85);
+  }
+  .btn-toggle[aria-expanded="true"]::before {
+    transform: rotate(90deg);
+  }
+  
+  .btn-toggle-nav a {
+    display: inline-flex;
+    padding: .1875rem .5rem;
+    margin-top: .125rem;
+    margin-left: 1.25rem;
+    text-decoration: none;
+  }
+  .btn-toggle-nav a:hover,
+  .btn-toggle-nav a:focus {
+    background-color: #d2f4ea;
+  }
+  
+  .scrollarea {
+    overflow-y: auto;
+  }
+  
+  .fw-semibold { font-weight: 600; }
+  .lh-tight { line-height: 1.25;
+}
+
+/*Start CSS*/
+
+.input-date-start  {
+    width: 217px;
+    margin-bottom: 25px;
+}
+
+select {
+    margin-bottom: 25px;
+}
+
+.button-back {
+    margin-bottom: 25px;
+}
+
+/*Update CSS*/
+
+main {
+    overflow: auto;
+}
+
+.data-table {
+    margin-top: 15px;
+    overflow: scroll;
+}
+
+  

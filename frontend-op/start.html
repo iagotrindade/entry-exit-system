@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry & Exit Control System</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style_default.css" rel="stylesheet">
+</head>
+<body class="bg-dark">
+    <header>
+        <div class="section-area-tittle">
+            <div class="d-flex justify-content-center container-fluid">
+                <a class="text-decoration-none text-white" href="">
+                    <h1 class="text-center">Entry & Exit<br>Control System</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center container-sm section-start-area">
+            <form class="form-start-service d-flex flex-column justify-content-center" method="POST" action="startService">
+                <p class="text-white row-6">Olá, selecione sua graduação e seu nome abaixo:</p>
+                <select class="bg-dark text-white form-select-sm row-6" name="select-graduation">
+                    <option value="Sd-Ep">Sd Ep</option>
+                    <option value="Cb-EV">Cb EV</option>
+                    <option value="Cb-EP">Cb EP</option>
+                    <option value="3º-Sgt" selected >3º Sgt</option>
+                    <option value="2º-Sgt">2º Sgt</option>
+                    <option value="1º-Sgt">1º Sgt</option>
+                    <option value="Sub-Tenente">Sub-Tenente</option>
+                </select>
+
+                <select class="bg-dark text-white form-select-sm row-6" name="select-war-name">
+                    <option value="name-1">Fulano</option>
+                    <option value="name-2">Ciclano</option>
+                    <option value="name-3">Beltrano</option>
+                </select>
+
+                <p class="text-white">Seu serviço será no dia 01/01/2022? Caso não seja, selecione a data manualmente:</p>
+                <input style="outline: 0; border: none; border: 1px solid #bbb;" class="bg-dark text-white input-date-start form-select-sm" type="date">
+                <button type="button" class="button-back btn btn-outline-danger">Voltar</button>
+                <button type = "submit" class="button-go btn btn-outline-success">Prosseguir</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

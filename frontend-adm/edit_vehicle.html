@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Entry & Exit Control System</title>
+
+            <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+            <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="assets/css/style_default.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        </head>
+        <body class="d-flex justify-content-around bg-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol id="bootstrap" viewBox="0 0 118 94">
+                <title>Bootstrap</title>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+                </symbol>
+            </svg>
+
+            <div class="section-aside-menu">
+              <div class="section-menu-mobile d-none flex-column flex-shrink-0 bg-dark" style="width: 4.5rem;">
+                <a href="/" class="d-block p-3 text-white text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                  <span class="visually-hidden">Icon-only</span>
+                </a>
+                <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+                  <li class="nav-item">
+                  <a href="/" class="nav-link active" aria-current="page">
+                      <i class="bi bi-house-door menu-icon-mob"></i>
+                  </a>
+                  </li>
+                  <li>
+                  <a href="vehicles.html" class="nav-link text-white">
+                      <i class="bi bi-truck menu-icon-mob"></i>
+                  </a>
+                  </li>
+                  <li>
+                  <a href="drivers.html" class="nav-link text-white">
+                      <i class="bi bi-people menu-icon-mob"></i>
+                  </a>
+                  </li>
+                  <li>
+                  <a href="closeds.html" class="nav-link text-white">
+                    <i class="bi bi-card-text menu-icon-mob"></i>
+                  </a>
+                  </li>
+                  <li>
+                  <a href="profile.html" class="nav-link text-white">
+                      <i class="bi bi-cone-striped menu-icon-mob"></i>
+                  </a>
+                  </li>
+        
+                  <li>
+                    <a href="profile.html" class="nav-link text-white">
+                        <i class="bi bi-clipboard-minus menu-icon-mob"></i>
+                    </a>
+                  </li>
+        
+                  <li>
+                    <a href="profile.html" class="nav-link text-white">
+                        <i class="bi bi-person-lines-fill menu-icon-mob"></i>
+                    </a>
+                  </li>
+              </ul>
+        
+                <hr>
+                  <a href="report.html" class="nav-link py-3 text-white" title="Reportar Bug" data-bs-toggle="tooltip" data-bs-placement="right">
+                    <i class="d-flex justify-content-center bi bi-bug menu-icon-mob"></i>
+                  </a>
+              </div>
+        
+              <div class="section-menu-default d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 260px;">
+                  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+                      <span class="fs-4">3º Bcom</span>
+                  </a>
+                  <hr>
+                  <ul class="nav nav-pills flex-column mb-auto">
+                      <li class="nav-item">
+                      <a href="/" class="nav-link active" aria-current="page">
+                          <i class="bi bi-house-door menu-icon me-2"></i>
+                          Início
+                      </a>
+                      </li>
+                      <li>
+                      <a href="vehicles.html" class="nav-link text-white">
+                          <i class="bi bi-truck menu-icon me-2"></i>
+                          Viaturas
+                      </a>
+                      </li>
+                      <li>
+                      <a href="drivers.html" class="nav-link text-white">
+                          <i class="bi bi-people menu-icon me-2"></i>
+                          Motoristas
+                      </a>
+                      </li>
+                      <li>
+                      <a href="closeds.html" class="nav-link text-white">
+                        <i class="bi bi-card-text menu-icon me-2"></i>
+                        Fichas
+                      </a>
+                      </li>
+                      <li>
+                      <a href="profile.html" class="nav-link text-white">
+                          <i class="bi bi-cone-striped menu-icon me-2"></i>
+                          Garagens
+                      </a>
+                      </li>
+        
+                      <li>
+                        <a href="profile.html" class="nav-link text-white">
+                            <i class="bi bi-clipboard-minus menu-icon me-2"></i>
+                            Relatórios
+                        </a>
+                      </li>
+        
+                      <li>
+                        <a href="profile.html" class="nav-link text-white">
+                            <i class="bi bi-person-lines-fill menu-icon me-2"></i>
+                            Cadastros
+                        </a>
+                      </li>
+                  </ul>
+                  <hr>
+          
+                  <a href="report.html" class="nav-link text-white">
+                      <i class="bi bi-bug menu-icon me-2"></i>
+                      Reportar um Bug
+                  </a>
+              </div>
+              <div class="b-example-divider me-2"></div>
+          </div>
+            
+            <main class="add-section">
+                <nav style="align-items: flex-start;" class="navbar navbar-expand-lg navbar-dark">
+                    <div class="navbar-brand">
+                      <img style="vertical-align: initial" class="user-icon" src="assets/images/Divisa de 3º Sgt.png"/>
+                    </div>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target ="#navbarMenu">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="navbar-collapse collapse" id="navbarMenu">
+                      <div class="navbar-nav">
+                          <p class="nav-item text-white nav-link">3º Sgt Fulano</p>
+                          <a class="nav-item nav-link" href="finalizar.php">Finalizar Serviço <i class="bi bi-box-arrow-right ms-1"></i></a>
+                      </div>
+                    </div>
+                  </nav>
+
+                </div>
+                    <div class="pt-5 section-add-form-area d-flex justify-content-center container-sm section-start-area">
+                        <form class="form-start-service  d-flex flex-column justify-content-center align-content-around" method="POST" action="add.php" enctype="multipart/form-data">
+                            <div class="d-flex flex-column justify-content-start align-items-baseline text-white ms-1 mb-3">
+                              <div class="d-flex text-white">
+                                <!-- Swiper -->
+                                <div class="swiper mySwiper mb-3">
+                                    <h3 class="text-white text-center mb-3">Viatura Marruá Agrale EB 17011</h3>
+                                    <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/marruá1.jpg" />
+                                        <a href="delete.php" type="button" class="d-flex justify-content-center button-back btn btn-outline-danger mt-2">Excluir</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/images/marrua2.webp" />
+                                        <a href="delete.php" type="button" class="d-flex justify-content-center button-back btn btn-outline-danger mt-2">Excluir</a>
+                                    </div>
+                                    </div>  
+                                </div>
+                            
+                                <!-- Swiper JS -->
+                                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                            
+                                <!-- Initialize Swiper -->
+                                <script>
+                                    var swiper = new Swiper(".mySwiper", {
+                                    effect: "coverflow",
+                                    grabCursor: true,
+                                    centeredSlides: true,
+                                    slidesPerView: "auto",
+                                    coverflowEffect: {
+                                        rotate: 50,
+                                        stretch: 0,
+                                        depth: 100,
+                                        modifier: 1,
+                                        slideShadows: true,
+                                    },
+                                    pagination: {
+                                        el: ".swiper-pagination",
+                                    },
+                                    });
+                                </script>
+                            </div>
+
+                            <div class="pictures-area d-flex align-items-baseline">
+                              <h5 class="me-2">Fotos</h5> 
+                              <i class="bi bi-images"></i>
+                            </div>
+                            <div class="input-area-1 d-flex justify-content-center">
+                                <input style="margin: 0;" type="file" id="file" name="files[]" multiple/>     
+                            </div>
+                                
+                            </div>
+                            <div class="d-flex justify-content-start align-items-baseline text-white ms-1">
+                              <h5 class="me-2">Especificações</h5> 
+                              <i class="bi bi-gear"></i>
+                            </div>
+                            <div class="d-flex justify-content-between flex-column section-area-select">
+                                  <div class="input-area-1 d-flex justify-content-center">
+                                        <input style="border: 1px solid #aaa;" type="text" placeholder="Digite o Nome:" class="name-input bg-dark text-white form-select-sm row-6 w-25" name="plate">  
+                                        </input>
+                                        <input style="border: 1px solid #aaa;" type="text" placeholder="Digite a placa:" class="plate-input bg-dark text-white form-select-sm row-6 w-25" name="plate">  
+                                        </input>
+
+                                        <select class="new-exit-select bg-dark text-white form-select-sm row-6 w-25" name="type">
+                                            <option class="bg-dark" value="situation" disabled selected>Tipo</option>
+                                            <option value="marruá">Marruá</option>
+                                            <option value="5 Ton">5 Ton</option>
+                                            <option value="land">Land</option>
+                                            <option value="administrativa">Administrativa</option>
+                                        </select>
+
+                                        <select class="new-exit-select bg-dark text-white form-select-sm row-6 w-25" name="fuel">
+                                            <option class="bg-dark" value="situation" disabled selected>Combustível</option>
+                                            <option value="marruá">Gasolina</option>
+                                            <option value="5 Ton">Diesel</option>
+                                            <option value="5 Ton">Alcool</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-area-2 d-flex justify-content-around">
+                                        <select class="new-exit-select bg-dark text-white form-select-sm row-6 w-25" name="steering">
+                                            <option class="bg-dark" value="situation" disabled selected>Direção</option>
+                                            <option value="marruá">Mecânica</option>
+                                            <option value="5 Ton">Hidráulica</option>
+                                            <option value="5 Ton">Elétrica</option>
+                                        </select>
+                                        <input style="border: 1px solid #aaa;" type="text" placeholder="Capacidade do Tanque:" class="tank-input bg-dark text-white form-select-sm row-6 w-25" name="plate">  
+                                        </input>
+                                        
+                                        <input style="border: 1px solid #aaa;" type="text" placeholder="Cor:" class="color-input bg-dark text-white form-select-sm row-6 w-25" name="plate">  
+                                        </input>
+
+                                        <input style="border: 1px solid #aaa; border-radius: 3px;" type="number" placeholder="Capacidade de Pessoal" class="cap-input bg-dark text-white form-select-sm row-6 w-25">     
+                                    </div>
+
+                                    <div class="d-flex justify-content-start align-items-baseline text-white ms-1 mt-3">
+                                        <h5 class="me-2">Dimenções</h5> 
+                                        <i class="bi bi-box"></i>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between flex-column section-area-select">
+                                        <div class="input-area-1 d-flex justify-content-center">
+                                            <input style="border: 1px solid #aaa;" type="number" placeholder="Digite a Altura:" class="height-input bg-dark text-white form-select-sm row-6 w-50" name="height">  
+                                            </input>
+      
+                                            <input style="border: 1px solid #aaa;" type="number" placeholder="Digite a Largura:" class="width-input bg-dark text-white form-select-sm row-6 w-25" name="width">  
+                                            </input>
+      
+                                            <input style="border: 1px solid #aaa;" type="number" placeholder="Digite o Comprimento:" class="length-input bg-dark text-white form-select-sm row-6 w-25" name="length">  
+                                            </input>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start align-items-baseline text-white ms-1 mt-3">
+                                        <h5 class="me-2">Situação</h5> 
+                                        <i class="bi bi-card-checklist"></i>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between flex-column section-area-select">
+                                            <div class="input-area-1 d-flex justify-content-center">
+                                                <select class="new-exit-select bg-dark text-white form-select-sm row-6 w-25" name="holder">
+                                                    <option class="bg-dark" value="holder" disabled selected>Detentor</option>
+                                                    <option value="marruá">CCPCR</option>
+                                                    <option value="5 Ton">CCPC</option>
+                                                    <option value="5 Ton">CCAP</option>
+                                                </select>
+        
+                                                <select class="new-exit-select bg-dark text-white form-select-sm row-6 w-25" name="disp">
+                                                    <option class="bg-dark" value="situation" disabled selected>Disponibilidade</option>
+                                                    <option value="disp">Disponível</option>
+                                                    <option value="indisp">Indisponível</option>
+                                                </select>
+        
+                                                <select class="new-exit-select bg-dark text-white form-select-sm row-6 w-25" name="condition">
+                                                    <option class="bg-dark" value="condition" disabled selected>Condição</option>
+                                                    <option value="disp">Excelente</option>
+                                                    <option value="indisp">Boa</option>
+                                                    <option value="indisp">Regular</option>
+                                                    <option value="indisp">Ruim</option>
+                                                </select>
+
+                                                <input style="border: 1px solid #aaa;" type="texte" placeholder="Digite o O.D:" class="od-input bg-dark text-white form-select-sm row-6 w-25" name="od">  
+                                                </input>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="section-area-select mt-1">
+                                <a href="/index.html" type="button" class="button-back btn btn-outline-danger">Voltar</a>
+                                <button type = "submit" class="button-go btn btn-outline-success">Atualizar</button>
+                            </div>     
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/js/vanilla.js"></script>
+        </body>
+    </html>

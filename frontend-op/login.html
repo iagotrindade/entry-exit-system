@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry & Exit Control System</title>
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style_default.css">
+</head>
+<body class="bg-dark">
+    <header>
+        <div class="section-area-tittle">
+            <div class="d-flex justify-content-center container-fluid">
+                <a class="text-decoration-none text-white" href="">
+                    <h1 class="text-center">Entry & Exit<br>Control System</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog" id="modalSignin">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content rounded-5 shadow bg-transparent">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+              <!-- <h5 class="modal-title">Modal title</h5> -->
+              <h2 class="text-white">Acesse o sistema</h2>
+            </div>
+      
+            <div class="modal-body p-5 pt-5">
+              <form action="login.php">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="input-user form-control rounded-4 bg-dark text-white" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput" class="text-white">Nome de usuário</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="password" class="input-password form-control rounded-4  bg-dark text-white" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword" class="text-white">Senha</label>
+                  </div>
+                  <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="submit">Acessar</button>
+                  <small class="text-muted">Notou algum bug? entre em contato com o desenvolvedor!    </small>
+                  <hr class="my-4">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
