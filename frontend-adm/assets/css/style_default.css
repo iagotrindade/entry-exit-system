@@ -28,6 +28,11 @@
     outline: 0;
     box-shadow: 0 0 0 0 ;
 }
+
+.bi-box-arrow-right {
+    margin-top: 1.5px;
+}
+
 .active-pag {
     background-color:#fff !important;
     color: #000 !important;
@@ -284,6 +289,40 @@ main {
 
 .vehicles-details-section {
     width: 80%;
+}
+
+/*Garagens CSS*/
+
+.cias-area {
+    height: 400px;
+}
+
+.cias-area a, .garage-area a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.g-ccpcr:hover, .g-ccpc:hover, .g-ccap:hover, .g-option:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.gar-people {
+    width: 240px !important;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 15px;
+}
+
+.bar {
+    width: 75%;
+    height: 15px;
+}
+
+.garage-area {
+    height: 200px;
 }
 
 /*Swipper CSS*/
